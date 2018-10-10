@@ -1,13 +1,18 @@
+// Login page
+// Imports of necessary apis and components
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, Dimensions, TouchableOpacity } from 'react-native';
-import { createStackNavigator } from 'react-navigation';
 
+// Imports of assests and constants
 import logo from './images/logo.png'
 import Icon from 'react-native-vector-icons/Ionicons'
 import './Constants'
+
 const { width:WIDTH} = Dimensions.get('window')
 
+// Main export class
 export default class Login extends React.Component {
+  // Constructor defining hidepass and press variable to control password visibility
   constructor() {
     super()
     this.state={
@@ -16,6 +21,7 @@ export default class Login extends React.Component {
     }
   }
 
+  // hidepass variable state set
   hidePass=() => {
     if(this.state.press==false){
       this.setState({hidePass:false, press:true})
@@ -24,8 +30,10 @@ export default class Login extends React.Component {
     }
   }
 
+  // Main render function
   render() {
     return (
+      // Main View with ememelts of forms
       <View style={styles.container}>
       <View style={styles.logocontainer}>
         <Image source={logo} resizeMode={'contain'} style={styles.logo} />
@@ -76,10 +84,12 @@ export default class Login extends React.Component {
 
 
       </View>
+      // End of main view
     );
   }
 }
 
+// styles used for Login
 const styles = StyleSheet.create({
   container: {
     flex: 1,

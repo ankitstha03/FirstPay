@@ -1,3 +1,4 @@
+// Entry point of the app
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, Dimensions, TouchableOpacity } from 'react-native';
 import { createStackNavigator } from 'react-navigation';

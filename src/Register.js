@@ -1,12 +1,16 @@
+// Register page
+// Imports of necessary apis and components
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput, Dimensions, TouchableOpacity } from 'react-native';
-import { createStackNavigator } from 'react-navigation';
 
+// Imports of assests and constants
 import logo from './images/logo.png'
 import Icon from 'react-native-vector-icons/Ionicons'
 import './Constants'
+
 const { width:WIDTH} = Dimensions.get('window')
 
+// Main export class
 export default class Register extends React.Component {
   constructor() {
     super()
@@ -80,6 +84,7 @@ export default class Register extends React.Component {
   }
 }
 
+// styles used for Register
 const styles = StyleSheet.create({
   container: {
     flex: 1,
